@@ -6,4 +6,4 @@ Este curso tiene como objetivo proporcionar una introducción completa al desarr
 # Contenido de este repositorio
 | Parte del curso | Ejercicios | Ir al ejercicio |
 | :---         |     :---:      |          :---: |
-| Parte 0   | del 4 al 6    | [ejercicios_parte_0](parte0/)   |
+| Parte 0: Fundamentos de las aplicaciones web  | del 4 al 6    | [ejercicios_parte_0](parte0/)   |
