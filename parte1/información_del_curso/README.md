@@ -1,8 +1,8 @@
-# Course Information
+# React + Vite
 
-This part contains the resolution of exercises 1.1-1.2, in the step column you can access the specific commit of the step related to the part of the exercise.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-| Part | Exercises | Step |
-| :---         |     :---:      |          :---: |
-| a Introduction to React  | 1.1-1.2    | 1 <br> [go to step](https://github.com/Amed-Dev/fullstack_open_bootcamp/tree/663bbc58000816f679e6e71984be3f3cf82a709c/parte1/informaci%C3%B3n_del_curso)   |
-| a Introduction to React  | 1.1-1.2    | 2 <br> [go to step](./)   |
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
