@@ -1,6 +1,6 @@
-# Course Information - step 3
+# Course Information - step 4
 
-In this step of the exercise, we modify the variable definitions of the App component and refactor the application to continue working with objects.
+In this step of the exercise, ***we place the objects in an array***. Then we modify the application component's variable definitions and refactor the application to continue working with the new structure.
 
 ## Installation
 
