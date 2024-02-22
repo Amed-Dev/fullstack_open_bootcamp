@@ -1,6 +1,7 @@
-# Course Information - step 4
+# Course Information - step 5
 
-In this step of the exercise, ***we place the objects in an array***. Then we modify the application component's variable definitions and refactor the application to continue working with the new structure.
+In this step of the exercise, we ***place the course and its parts into a single array***. 
+Then we refactor the app to fix anything that's broken.
 
 ## Installation
 
