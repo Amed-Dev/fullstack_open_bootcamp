@@ -1,6 +1,6 @@
-# Unicafe - step 2
+# Unicafe - step 3
 
-In this step of the exercise, ***we extended the app to show more statistics about the gathered feedback: the total number of collected feedback, the average score (good: 1, neutral: 0, bad: -1) and the percentage of positive feedback.***.
+In this step of the exercise, ***we reafactored the app so that displaying the statistics is extracted into its own Statistics component.***
 
 ![Web app for collect customer feedback](./src/assets/step2.png)
 ## Installation
