@@ -15,6 +15,9 @@ const Statistics = ({ clicks }) => {
   const total = clicks.good + clicks.neutral + clicks.bad;
   const average = total === 0 ? 0: (clicks.good * 1 + clicks.bad * -1) / total;
   const positive = total === 0 ? 0: (clicks.good / total) * 100;
+  if (total === 0){
+    return (<p>No feedback given</p>)
+  }
   return (
     <div>
       <StatiticItem text={"Good"} value={clicks.good} />

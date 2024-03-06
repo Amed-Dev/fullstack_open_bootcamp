@@ -1,8 +1,8 @@
-# Unicafe - step 3
+# Unicafe - step 4
 
-In this step of the exercise, ***we reafactored the app so that displaying the statistics is extracted into its own Statistics component.***
+In this step of the exercise, ***we modified the app to display statistics only once feedback has been gathered.***
 
-![Web app for collect customer feedback](./src/assets/step2.png)
+![Web app for collect customer feedback](./src/assets/step4.png)
 ## Installation
 
 Install the libraries needed with npm command:
