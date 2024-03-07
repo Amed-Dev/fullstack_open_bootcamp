@@ -1,11 +1,12 @@
 import { useState } from "react";
 
 const TitleSection = ({ caption }) => <h1>{caption}</h1>;
+
 const Button = ({ handleClick, text }) => (
   <button onClick={handleClick}>{text}</button>
 );
 
-const StatiticItem = ({ text, value }) => (
+const StatiticLine = ({ text, value }) => (
   <p>
     {text}: {value}
   </p>
@@ -20,12 +21,12 @@ const Statistics = ({ clicks }) => {
   }
   return (
     <div>
-      <StatiticItem text={"Good"} value={clicks.good} />
-      <StatiticItem text={"Neutral"} value={clicks.neutral} />
-      <StatiticItem text={"Bad"} value={clicks.bad} />
-      <StatiticItem text={"All"} value={total} />
-      <StatiticItem text={"Average"} value={average} />
-      <StatiticItem text={"Positive"} value={`${positive}%`} />
+      <StatiticLine text={"Neutral"} value={clicks.neutral} />
+      <StatiticLine text={"Bad"} value={clicks.bad} />
+      <StatiticLine text={"Good"} value={clicks.good} />
+      <StatiticLine text={"All"} value={total} />
+      <StatiticLine text={"Average"} value={average} />
+      <StatiticLine text={"Positive"} value={`${positive}%`} />
     </div>
   );
 };
