@@ -4,6 +4,9 @@ const Button = ({ handleClik, text }) => {
   return <button onClick={handleClik}>{text}</button>;
 };
 
+const VoteStatistics = ({ vote }) => {
+  return <div className="votes">Has ⭐ {vote} votes</div>;
+};
 const App = () => {
   const anecdotes = [
     "If it hurts, do it more often.",
@@ -17,14 +20,25 @@ const App = () => {
   ];
 
   const [selected, setSelected] = useState(0);
+  const [votes, setVotes] = useState(Array(anecdotes.length).fill(0));
+
   const HandleClickNext = () => {
     const RandomSelect = Math.floor(Math.random() * anecdotes.length);
     setSelected(RandomSelect);
   };
+  const HandleClickVote = () => {
+    const newVote = {...votes}
+    newVote[selected] += 1;
+    setVotes(newVote);
+  };
   return (
-    <div class="container">
-      <div class="anecdote-card">{anecdotes[selected]}</div>
-      <Button handleClik={HandleClickNext} text={"Next anecdotes"} />
+    <div className="container">
+      <div className="anecdote-card">
+        <div>{anecdotes[selected]}</div>
+        <VoteStatistics vote={votes[selected]} />
+      </div>
+      <Button handleClik={HandleClickVote} text={"⭐Vote"} />
+      <Button handleClik={HandleClickNext} text={"Next anecdote"} />
     </div>
   );
 };
