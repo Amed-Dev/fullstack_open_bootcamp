@@ -7,3 +7,4 @@ Este curso tiene como objetivo proporcionar una introducción completa al desarr
 | Parte del curso | Ejercicios | Ir al ejercicio |
 | :---         |     :---:      |          :---: |
 | Parte 0: Fundamentos de las aplicaciones web  | del 4 al 6    | [ejercicios_parte_0](parte0/)   |
+| Parte 0: Introducción a React  | del 1 al 14    | [ejercicios_parte_1](parte1/)   |
