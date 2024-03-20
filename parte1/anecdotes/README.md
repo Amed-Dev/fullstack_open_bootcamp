@@ -1,9 +1,9 @@
-# Anecdotes - step 1
+# Anecdotes - step 3
 
-In this step of the exercise, **_we implement a button to vote for the anecdote show on the screen:_**
+In this step of the exercise, **_we implemented a section that shows the anecdote with the highest score:_**
 [**👉go to anecdotes: _App.jsx_**](./src/App.jsx)
 
-![Web app to show user anecdotes](./src/assets/img/step-2.webp)
+![Web app to show user anecdotes](./src/assets/img/step-3.webp)
 
 ## App specifications
 
@@ -16,6 +16,7 @@ When you click the Next anecdote button, the app does the following:
 When you click the Vote button, the app does the following:
 
 - **The vote counter for the anecdote displayed on the screen increases by one.**
+- **According to the number of votes, the section that shows the anecdote with the highest score is updated.**
 
 ## Installation
 

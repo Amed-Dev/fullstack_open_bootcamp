@@ -4,8 +4,36 @@ const Button = ({ handleClik, text }) => {
   return <button onClick={handleClik}>{text}</button>;
 };
 
-const VoteStatistics = ({ vote }) => {
-  return <div className="votes">Has ⭐ {vote} votes</div>;
+const AnecdoteViewer = ({ votes, anecdotes, title, children }) => {
+  return (
+    <div className="card">
+      <h1>{title}</h1>
+      <div className="anecdote">{anecdotes}</div>
+      <div className="votes">Has ⭐ {votes} votes</div>
+      <div>{children}</div>
+    </div>
+  );
+};
+
+const HighestScore = ({ title, anecdotes, votes }) => {
+  const maxScore = Math.max(...votes);
+  const indexAnecdote = votes.indexOf(maxScore);
+  const AnecdoteWithTheHighestScore = anecdotes[indexAnecdote];
+
+  if (maxScore === 0) {
+    return (
+      <div className="card not-grid alert-warning ">
+        <p>No votes yet</p>
+      </div>
+    );
+  }
+  return (
+    <div className="card">
+      <h1>{title}</h1>
+      <div className="anecdote">{AnecdoteWithTheHighestScore}</div>
+      <div className="votes">Has ⭐ {maxScore} votes</div>
+    </div>
+  );
 };
 const App = () => {
   const anecdotes = [
@@ -27,18 +55,24 @@ const App = () => {
     setSelected(RandomSelect);
   };
   const HandleClickVote = () => {
-    const newVote = {...votes}
+    const newVote = [...votes];
     newVote[selected] += 1;
     setVotes(newVote);
   };
   return (
     <div className="container">
-      <div className="anecdote-card">
-        <div>{anecdotes[selected]}</div>
-        <VoteStatistics vote={votes[selected]} />
-      </div>
-      <Button handleClik={HandleClickVote} text={"⭐Vote"} />
-      <Button handleClik={HandleClickNext} text={"Next anecdote"} />
+      <AnecdoteViewer
+        title="Anecdote of the day"
+        anecdotes={anecdotes[selected]}
+        votes={votes[selected]}>
+        <Button handleClik={HandleClickVote} text={"⭐Vote"} />
+        <Button handleClik={HandleClickNext} text={"Next anecdote"} />
+      </AnecdoteViewer>
+      <HighestScore
+        title={"Anecdote with most votes"}
+        anecdotes={anecdotes}
+        votes={votes}
+      />
     </div>
   );
 };
