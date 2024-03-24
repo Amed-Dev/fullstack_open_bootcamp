@@ -3,6 +3,13 @@
   padding: 2rem;
 }
 
-.bold{
+.bold {
   font-weight: bold;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: #333;
+    background: #dddfe3;
+  }
 }

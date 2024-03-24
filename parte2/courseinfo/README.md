@@ -1,13 +1,13 @@
-# Course Information - step 6 - 8
+# Course Information _ step 9 - 10
 
-In this step of the exercise, ***We refactored the structure of the components to format the information of a single course in a component called Course, that way, the Course component is responsible for rendering the name and parts of the course. And calculate the total exercises using the array method <u>reduce</u>***
+In this step of the exercise, ***we extend the app to allow an arbitrary number of courses and separate the Course component and its subcomponents into a separate module that is imported into the App component.***
 
-![Web app to show course information](./src/assets/step-6.webp)
+![Web app to show course information](./src/assets/step-9_10.webp)
 
 ## Task completed
-- [x] step 6
-- [x] step 7
-- [x] step 8
+- [x] step 9 (Allow an arbitrary number of courses).
+- [x] step 10 (Separate the Course component and its subcomponents into a separate module).
+
 ## Installation
 
 Install the libraries needed with npm command:
